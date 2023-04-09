@@ -1,0 +1,111 @@
+.ball {
+  width: 100%;
+  height: 100%;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+}
+
+/* .ancla:before {
+  display: block;
+  content: " ";
+  margin-top: -140px;
+  height: 140px;
+  visibility: hidden;
+} */
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+.altoinicio {
+  height: 83vh;
+}
+.altoservicios {
+  height: 500px;
+}
+.anchotitulo {
+  min-width: 456px;
+}
+.menu > ul > li {
+  padding: 1px;
+}
+@media (min-width: 100px) {
+  .menu:hover ul {
+    display: block;
+    position: absolute;
+    padding: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .menu > ul > li:hover {
+    background-color: #fdf2ff;
+  }
+}
+
+*::selection {
+  background: rgb(78, 243, 255);
+  color: rgb(0, 0, 0);
+}
+
+/* Firefox */
+p::-moz-selection {
+  background: green;
+  color: black;
+}
+
+@media (min-width: 578px) {
+  .servicios,
+  .footer {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .temservice,
+  .itemfooter {
+    width: 50%;
+    padding: 10px;
+  }
+  .nosotros {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .imgnosotros {
+    min-width: 150px;
+  }
+}
+@media (min-width: 640px) {
+  .menu:hover ul {
+    display: flex;
+    position: inherit;
+    padding: 0px;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 830px) {
+  .footer {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 860px) {
+  .ball {
+    width: 70%;
+  }
+  .servicios {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .temservice,
+  .itemfooter {
+    width: 33.3%;
+  }
+}

@@ -1,0 +1,5 @@
+export const LINK_COOKING = 'https://www.facebook.com/Cooking.Gourmet'
+export const LINK_FOOTLOOSE = 'https://www.facebook.com/footloose.pe'
+export const LINK_SANPEDRO = 'https://www.facebook.com/ist.sanpedro.7'
+export const LINK_JYR = ''
+export const LINK_CASACHEF = 'https://www.facebook.com/Chefhuaychulo'
